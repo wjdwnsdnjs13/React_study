@@ -6,6 +6,7 @@ import Box from './Box';
 import Article from "./Article";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main0317 from "./0317/main0317";
+import Main0324 from "./3weeks/main0324";
 import Main from './Main';
 
 
@@ -15,7 +16,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/0317' element={<Main0317/>}/>
+          <Route path='/main0317' element={<Main0317/>}/>
+          <Route path='/main0324' element={<Main0324/>}/>
           <Route path='/' element={<Main/>}/>
           
         </Routes>

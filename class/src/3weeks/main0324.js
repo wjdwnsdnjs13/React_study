@@ -4,7 +4,7 @@ import CommentList from './CommentList'
 const main0324 = () => {
   return (
     <div>
-      <CommentList/>
+      <CommentList />
     </div>
   )
 }

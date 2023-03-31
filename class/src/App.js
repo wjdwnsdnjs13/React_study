@@ -7,6 +7,8 @@ import Article from "./Article";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main0317 from "./0317/main0317";
 import Main0324 from "./3weeks/main0324";
+import Main0330 from "./4weeks/main0330";
+import TodoList from "./4weeks/TodoList";
 import Main from './Main';
 
 
@@ -18,6 +20,8 @@ function App() {
         <Routes>
           <Route path='/main0317' element={<Main0317/>}/>
           <Route path='/main0324' element={<Main0324/>}/>
+          <Route path='/main0330' element={<Main0330/>}/>
+          <Route path='/todoList' element={<TodoList/>}/>
           <Route path='/' element={<Main/>}/>
           
         </Routes>

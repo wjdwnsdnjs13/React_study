@@ -1,9 +1,19 @@
 import React from 'react'
 
-const TodoItem = (props) => {
+
+// const deleteList = (i) => {
+//   deleteList(i)
+//   localStorage.removeItem(i)
+//   // index 1, index 2 삭제
+//   arr.splice(1, 2);
+// }
+
+const TodoItem = ({item, deleteList}) => {
+  const {id, text} = item;
   return (
     <div>
-      {props.item}
+      <button  value={id} onClick={() => deleteList(id)}>X</button>
+      {text}
     </div>
   )
 }

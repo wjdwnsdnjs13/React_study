@@ -2,7 +2,6 @@ import React from 'react'
 import TodoItem from './TodoItem'
 
 const TodoBoard = ({ todoList, deleteList }) => {
-  // const deletelist = () => {{deleteList}}
   let i = 0;
   return (
     <div>

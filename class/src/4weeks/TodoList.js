@@ -10,6 +10,7 @@ const TodoList = () => {
         checked: true
     },]);
 
+
     const nextId = useRef(0);
     const addItem = () => {
         const todo = {
@@ -18,7 +19,6 @@ const TodoList = () => {
             checker: false,
         };
         setTodoList(todoList.concat(todo));
-        localStorage.setItem('todoList', JSON.stringify(todoList))
         nextId.current += 1;
     }
     const deleteList = (id) => {

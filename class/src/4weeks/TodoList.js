@@ -11,7 +11,7 @@ const TodoList = () => {
     },]);
 
 
-    const nextId = useRef(0);
+    const nextId = useRef(1);
     const addItem = () => {
         const todo = {
             id: nextId.current,

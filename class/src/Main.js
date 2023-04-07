@@ -9,6 +9,8 @@ const Main = () => {
       <Link to="/main0324">3주차</Link><br/>
       <Link to="/main0330">4주차</Link><br/>
       <Link to="/todoList">todoList(과제)</Link><br/>
+      <Link to="/Main0406">5주차</Link><br/>
+      <Link to="/todoListNew">todoListNew(과제)</Link><br/>
     </div>
   )
 }

@@ -8,7 +8,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main0317 from "./0317/main0317";
 import Main0324 from "./3weeks/main0324";
 import Main0330 from "./4weeks/main0330";
+import Main0406 from "./5weeks/Main0406";
 import TodoList from "./4weeks/TodoList";
+import TodoListNew from "./5weeks/TodoListNew";
 import Main from './Main';
 
 
@@ -22,6 +24,8 @@ function App() {
           <Route path='/main0324' element={<Main0324/>}/>
           <Route path='/main0330' element={<Main0330/>}/>
           <Route path='/todoList' element={<TodoList/>}/>
+          <Route path='/Main0406' element={<Main0406/>}/>
+          <Route path='/todoListNew' element={<TodoListNew/>}/>
           <Route path='/' element={<Main/>}/>
           
         </Routes>

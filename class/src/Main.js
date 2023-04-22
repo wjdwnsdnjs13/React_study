@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   return (
@@ -11,6 +11,8 @@ const Main = () => {
       <Link to="/todoList">todoList(과제)</Link><br/>
       <Link to="/Main0406">5주차</Link><br/>
       <Link to="/todoListNew">todoListNew(과제)</Link><br/>
+      <Link to="/Main0413">6주차</Link><br/>
+      <Link to="/Main0414">6주차2</Link><br/>
     </div>
   )
 }

@@ -11,6 +11,7 @@ import TodoListNew from "./5weeks/TodoListNew";
 import Main0413 from "./6weeks/Main0413";
 import Main from './Main';
 import Main0414 from "./6weeks/Main0414";
+import Clock from "./9weeks/Clock";
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path='/Main0413' element={<Main0413/>}/>
           <Route path='/' element={<Main/>}/>
           <Route path='/Main0414' element={<Main0414/>}/>
+          <Route path='/Clock' element={<Clock/>}/>
           
         </Routes>
       </BrowserRouter>

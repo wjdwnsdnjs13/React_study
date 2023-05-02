@@ -13,6 +13,7 @@ const Main = () => {
       <Link to="/todoListNew">todoListNew(과제)</Link><br/>
       <Link to="/Main0413">6주차</Link><br/>
       <Link to="/Main0414">6주차2</Link><br/>
+      <Link to="/Clock">시계</Link><br/>
     </div>
   )
 }

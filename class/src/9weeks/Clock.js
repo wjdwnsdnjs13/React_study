@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Timer from './component/Timer';
-import './App.css';
 
-function App() {
+
+function Clock() {
     const [timer, setTimer] = useState(false);
     
     return (
@@ -22,4 +22,4 @@ function App() {
         </div>
     );
 }
-export default App;
+export default Clock;

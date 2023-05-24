@@ -4,7 +4,7 @@ import BoxClass from './component/BoxClass'
 import Box1 from './Box1'
 import Link from "react-router-dom";
 
-const main0330 = () => {
+const Main0330 = () => {
     const [cnt, setCnt] = useState(0);
     const ff = () => {
         setCnt(cnt + 1);
@@ -26,4 +26,4 @@ const main0330 = () => {
     )
 }
 
-export default main0330
+export default Main0330

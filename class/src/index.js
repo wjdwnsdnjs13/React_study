@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode> 
+  // next.config.js 여기서 strict를 false로 하거나 꺼야 2번 렌더링 안됨.
+  // 개발자 모드는 2번 렌더링 된다고 함.
     <App />
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

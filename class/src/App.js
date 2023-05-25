@@ -15,6 +15,7 @@ import Clock from "./9weeks/Clock";
 import Main0504 from "./9weeks/Main0504";
 import Main0511 from "./10weeks/Main0511";
 import Main0512 from "./10weeks/Main0512";
+import Main0525 from "./12weeks/Main0525";
 
 
 
@@ -36,6 +37,7 @@ function App() {
           <Route path='/Main0504' element={<Main0504/>}/>
           <Route path='/Main0511' element={<Main0511/>}/>
           <Route path='/Main0512' element={<Main0512/>}/>
+          <Route path='/Main0525' element={<Main0525/>}/>
           
         </Routes>
       </BrowserRouter>

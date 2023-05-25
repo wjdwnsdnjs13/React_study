@@ -17,6 +17,7 @@ const Main = () => {
       <Link to="/Main0504">9주차</Link><br/>
       <Link to="/Main0511">10주차</Link><br/>
       <Link to="/Main0512">10주차2</Link><br/>
+      <Link to="/Main0525">12주차</Link><br/>
     </div>
   )
 }

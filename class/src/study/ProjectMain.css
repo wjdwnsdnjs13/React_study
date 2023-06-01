@@ -1,0 +1,23 @@
+.projectMain{
+  margin: 10px;
+  text-align: center;
+  margin-left: 100px;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  height: 1200px;
+  width: 600px;
+  border: black 2px solid;
+  float:left;
+}
+.projectTodoItem{
+  text-align: left;
+  width: 100%;
+}
+.projectItem{
+  border: skyblue 1px solid;
+}
+.projectTodoCounter{
+  text-align: right;
+  float: right;
+}

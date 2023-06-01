@@ -16,6 +16,7 @@ import Main0504 from "./9weeks/Main0504";
 import Main0511 from "./10weeks/Main0511";
 import Main0512 from "./10weeks/Main0512";
 import Main0525 from "./12weeks/Main0525";
+import ProjectMain from "./study/ProjectMain";
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/Main0511' element={<Main0511/>}/>
           <Route path='/Main0512' element={<Main0512/>}/>
           <Route path='/Main0525' element={<Main0525/>}/>
+          <Route path='/ProjectMain' element={<ProjectMain/>}/>
           
         </Routes>
       </BrowserRouter>

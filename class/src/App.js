@@ -17,6 +17,8 @@ import Main0511 from "./10weeks/Main0511";
 import Main0512 from "./10weeks/Main0512";
 import Main0525 from "./12weeks/Main0525";
 import ProjectMain from "./study/ProjectMain";
+import Login from "./Login";
+import NaverLoginLoading from "./login/NaverLoginLoading";
 
 
 
@@ -25,14 +27,15 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/main0317' element={<Main0317/>}/>
-          <Route path='/main0324' element={<Main0324/>}/>
+          <Route path='/' element={<Login/>}/>
+          <Route path='/Main0317' element={<Main0317/>}/>
+          <Route path='/Main0324' element={<Main0324/>}/>
           <Route path='/Main0330' element={<Main0330/>}/>
           <Route path='/todoList' element={<TodoList/>}/>
           <Route path='/Main0406' element={<Main0406/>}/>
           <Route path='/todoListNew' element={<TodoListNew/>}/>
           <Route path='/Main0413' element={<Main0413/>}/>
-          <Route path='/' element={<Main/>}/>
+          <Route path='/Main' element={<Main/>}/>
           <Route path='/Main0414' element={<Main0414/>}/>
           <Route path='/Clock' element={<Clock/>}/>
           <Route path='/Main0504' element={<Main0504/>}/>
@@ -40,21 +43,10 @@ function App() {
           <Route path='/Main0512' element={<Main0512/>}/>
           <Route path='/Main0525' element={<Main0525/>}/>
           <Route path='/ProjectMain' element={<ProjectMain/>}/>
+          <Route path='/NaverLoginLoading' element={<NaverLoginLoading/>}/>
           
         </Routes>
       </BrowserRouter>
-      {/* <Header></Header>
-        <h1><a href="/">WEB</a></h1>
-      <nav>
-        <ol>
-          <li><a href="/rr/1">HTMLM</a></li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ol>
-      </nav>
-      <Article></Article>
-      <Box></Box>
-      <Link to="/0317/main0317">0317</Link> */}
     </div>
   );
 }

@@ -59,12 +59,13 @@ const Login = () => {
             .then((response) => {
                 console.log(response.data);
                 const statusCode = response.status;
-                if (statusCode === 201) {
+                if (statusCode === 200) {
                     alert(
                         "로그인이 정상적으로 처리되었습니다. 메인페이지로 이동합니다!"
                     );
+                    console.log("hi")
                     localStorage.setItem("user", user);
-                    navigator("/Main");
+                    navigate("/Main");
                 } else if (statusCode === 400) {
                     alert("로그인 실패!!");
                 }
@@ -75,7 +76,11 @@ const Login = () => {
             });
     }
     const handleClick = "a";
-
+    const enterKey = () => {
+        if (window.event.keyCode === 13) {
+            logIn();
+        }
+    }
 
 
 
@@ -88,16 +93,18 @@ const Login = () => {
                         name="userId"
                         placeholder="아이디"
                         value={user.userId}
-                        onChange={handleChange("userId")} />
+                        onChange={handleChange("userId")}
+                        onKeyUp={enterKey} />
                     <InputWithLabel
                         label="비밀번호"
                         name="userPw"
                         placeholder="비밀번호"
                         type="userPw"
                         value={user.userPw}
-                        onChange={handleChange("userPw")} />
+                        onChange={handleChange("userPw")}
+                        onKeyUp={enterKey} />
                     <hr />
-                    <input type="submit" value="Login" onClick={logIn} />
+                    <input type="button" value="Login" onClick={logIn}/>
                 </form>
                 <div id="naverIdLogin"></div>
             </div>

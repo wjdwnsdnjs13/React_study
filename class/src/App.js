@@ -19,6 +19,7 @@ import Main0525 from "./12weeks/Main0525";
 import ProjectMain from "./study/ProjectMain";
 import Login from "./Login";
 import NaverLoginLoading from "./login/NaverLoginLoading";
+import ToyProject_note from "./study/ToyProject_note";
 
 
 
@@ -44,6 +45,7 @@ function App() {
           <Route path='/Main0525' element={<Main0525/>}/>
           <Route path='/ProjectMain' element={<ProjectMain/>}/>
           <Route path='/NaverLoginLoading' element={<NaverLoginLoading/>}/>
+          <Route path='/ToyProject_note' element={<ToyProject_note/>}/>
           
         </Routes>
       </BrowserRouter>

@@ -7,7 +7,7 @@ const Main0324 = () => {
   const increase = () =>{
     cnt += 1;
     setCnt2(cnt2 + 1);
-    console.log(cnt, ", ", cnt2)
+    console.log(cnt, cnt2)
   }
   useEffect(() => {
     document.getElementById("hi").innerText = cnt2;

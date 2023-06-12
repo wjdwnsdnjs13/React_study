@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Link, useNavigate } from "react-router-dom";
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Main0317 from "./0317/main0317";
 import Main0324 from "./3weeks/Main0324";
 import Main0330 from "./4weeks/Main0330";
 import Main0406 from "./5weeks/Main0406";
@@ -17,6 +16,7 @@ import Main0511 from "./10weeks/Main0511";
 import Main0512 from "./10weeks/Main0512";
 import Main0525 from "./12weeks/Main0525";
 import ProjectMain from "./study/ProjectMain";
+import UseEffectExample from "./study/UseEffectExample";
 import Login from "./Login";
 import NaverLoginLoading from "./login/NaverLoginLoading";
 import ToyProject_note from "./study/ToyProject_note";
@@ -29,7 +29,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Login/>}/>
-          <Route path='/Main0317' element={<Main0317/>}/>
           <Route path='/Main0324' element={<Main0324/>}/>
           <Route path='/Main0330' element={<Main0330/>}/>
           <Route path='/todoList' element={<TodoList/>}/>
@@ -44,6 +43,7 @@ function App() {
           <Route path='/Main0512' element={<Main0512/>}/>
           <Route path='/Main0525' element={<Main0525/>}/>
           <Route path='/ProjectMain' element={<ProjectMain/>}/>
+          <Route path='/UseEffectExample' element={<UseEffectExample/>}/>
           <Route path='/NaverLoginLoading' element={<NaverLoginLoading/>}/>
           <Route path='/ToyProject_note' element={<ToyProject_note/>}/>
           

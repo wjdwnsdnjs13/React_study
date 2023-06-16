@@ -53,9 +53,9 @@ const Login = () => {
         localStorage.setItem("userPw", user.userPw);
         console.log(user);
         await axios.post("/note/login", {
-                userId : user.userId,
-                userPw : user.userPw
-            })
+            userId: user.userId,
+            userPw: user.userPw
+        })
             .then((response) => {
                 console.log(response.data);
                 const statusCode = response.status;
@@ -104,7 +104,7 @@ const Login = () => {
                         onChange={handleChange("userPw")}
                         onKeyUp={enterKey} />
                     <hr />
-                    <input type="button" value="Login" onClick={logIn}/>
+                    <input type="button" value="Login" onClick={logIn} />
                 </form>
                 <div id="naverIdLogin"></div>
             </div>
